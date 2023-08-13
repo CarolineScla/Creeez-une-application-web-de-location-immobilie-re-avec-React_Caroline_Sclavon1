@@ -2,5 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff6060;
+  }
+  
