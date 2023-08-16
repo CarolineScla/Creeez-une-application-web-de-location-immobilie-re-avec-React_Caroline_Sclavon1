@@ -7,8 +7,8 @@ function navbar() {
       <div className='navbar_logo'>
         <img src='logo.png' alt='logo'/>
       </div>
-      <div>Accueil</div>
-      <div>A propos</div>
+      <div className='navbar_menu'>Accueil</div>
+      <div className='navbar_menu'>A propos</div>
     </nav>
   )
 }
