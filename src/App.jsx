@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar.jsx';
-import './components/Navbar.scss';
-import Banner from './components/banner.jsx';
-import './index.scss';
-import AppartementGrid from "./components/AppartementGrid.jsx";
-import Main from "./components/Main.jsx";
+import Navbar from './components/navbar/Navbar.jsx';
+import Banner from './components/banner/banner.jsx';
+import AppartementGrid from "./components/appartementGrid/AppartementGrid.jsx";
+import Main from "./components/main/Main.jsx";
+import Appartement from "./components/appartement/Appartement.jsx";
+// import Footer from "./footer/Footer.jsx";
 
 
 function App() {
@@ -13,8 +13,11 @@ function App() {
       <Navbar />
       <Main>
           <Banner />
-          <AppartementGrid />
+          <AppartementGrid> 
+          <Appartement />
+          </AppartementGrid>
       </Main>
+      {/* <Footer />  */}
     </div>
   )
 }

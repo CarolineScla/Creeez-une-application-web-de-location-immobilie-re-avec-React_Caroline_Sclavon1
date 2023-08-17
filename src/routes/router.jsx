@@ -1,44 +1,39 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Navbar from "../components/Navbar.jsx";
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+//importer toutes les pages
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import RentalProfil, { rentalLoader } from "./pages/Rental.js";
+import Error from "./pages/Error.js";
 
 
-// eslint-disable-next-line react-refresh/only-export-components
-const HeaderFooterLayout = () => {
-  return (
-    <>
-      <MainWrapper>
-        <Navbar />
-        <Outlet />
-      </MainWrapper>
-      <Footer />
-    </>
-  );
-};
+function Router () {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "rentals/:id",
+      element: <RentalProfil />,
+      loader: rentalLoader,
+      id: "accommodation",
+      errorElement: <Error />
+    },
+    {
+      path: "about",
+      element: <About />
+    },
+    {
+      path: "error",
+      element: <Error />
+    },
+    {
+      path: "*",
+      element: <Error />
+    }
+  ])
 
-const router = createBrowserRouter([
-  {
-    element: <HeaderFooterLayout />,
-    errorElement: <ErrorPage />,
+  return <RouterProvider router={router} />
+}
 
-    children: [
-      {
-        index: true,
-        element: <App />,
-      },
-      {
-        path: "/appartement/:id",
-        element: <CurrentAppartement />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-    ],
-  },
-]);
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-    <RouterProvider router={router} />
-);
+export default Router;
