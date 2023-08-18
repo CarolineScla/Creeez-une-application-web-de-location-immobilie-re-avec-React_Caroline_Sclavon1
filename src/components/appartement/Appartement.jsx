@@ -3,7 +3,9 @@ import "./Appartement.scss";
 
 function Appartement() {
   return (
-    <div className='appartement'>Titre de la location</div>
+    <div className='appartement'>
+      <div className='appartement_text'>Titre de la <br />location</div>
+      </div>
   )
 }
 

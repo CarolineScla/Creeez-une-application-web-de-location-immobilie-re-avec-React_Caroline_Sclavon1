@@ -4,8 +4,9 @@ import "./banner.scss";
 function Banner() {
   return (
     <div className='banner'>
-        <h1>Chez vous, partout et ailleurs</h1>
-    </div>
+        <h1>Chez vous, <br className="break-on-small-screens" />partout et ailleurs
+      </h1>    
+      </div>
   )
 }
 

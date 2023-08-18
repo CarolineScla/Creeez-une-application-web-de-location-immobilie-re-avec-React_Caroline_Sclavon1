@@ -4,12 +4,12 @@ import Banner from './components/banner/banner.jsx';
 import AppartementGrid from "./components/appartementGrid/AppartementGrid.jsx";
 import Main from "./components/main/Main.jsx";
 import Appartement from "./components/appartement/Appartement.jsx";
-// import Footer from "./footer/Footer.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       <Main>
           <Banner />
@@ -17,7 +17,7 @@ function App() {
           <Appartement />
           </AppartementGrid>
       </Main>
-      {/* <Footer />  */}
+      <Footer /> 
     </div>
   )
 }

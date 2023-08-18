@@ -2,5 +2,18 @@
     min-height: 50vh;
     border-radius: 2rem;
     display: flex;
+    background-color:#F6F6F6;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .grid {
+        justify-content: center; 
+        background-color: #ffff;
+        padding: 0;
+    }
+}
