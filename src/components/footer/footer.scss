@@ -4,4 +4,31 @@
     text-align: center;
     min-height: 200px;
     margin: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+  
+    &_logo img {
+      max-width: 7rem;
+    }
+  
+    &_container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+    &_text {
+        margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer_text {
+        padding: 2rem 8em;
+        margin: 0;
+    }
 }
