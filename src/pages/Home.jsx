@@ -1,23 +1,25 @@
-import React from "react";
-import Header from '../components/Header/Header.jsx';
-import Banner from "../components/banner/banner.jsx";
-import Footer from './components/footer/Footer.jsx';
-import Gallery from '../components/Gallery/Gallery.jsx';
-import Cliffs from "../assets/sea_cliffs_view_1240.webp";
+import React from 'react';
+import Navbar from '../components/Navbar.jsx';
+import Banner from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/banner.jsx'
+import AppartementGrid from "../components/LogementGrid.jsx";
+import Content from "../components/Content.jsx";
+import Appartement from "../components/Logement.jsx";
+import Footer from "../components/Footer.jsx";
 
-function Home() {
+
+function App() {
   return (
-    <div className='homepage'>
-      <Header />
-        <Banner
-          image={Cliffs}
-          alt="vue d'un paysage avec mer et falaises"
-          text="Chez vous, partout et ailleurs"
-        />
-        <Gallery />
-      <Footer />
+    <div className='container'>
+      <Navbar />
+      <Content>
+          <Banner />
+          <AppartementGrid> 
+          <Appartement />
+          </AppartementGrid>
+      </Content>
+      <Footer /> 
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default App;

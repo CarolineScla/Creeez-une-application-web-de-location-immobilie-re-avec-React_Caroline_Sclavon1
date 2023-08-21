@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Header from '../../header/Header.jsx';
-import Footer from '../../Footer.jsx';
+import Navbar from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/Navbar.jsx';
+import Footer from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/Footer.jsx';
+import '../styles/Error.scss'
 
 function Error() {
     return (
         <div className='error-page'>
-            <Header />
+            <Navbar />
             <div className="error-section">
                 <span className="error-number">404</span>
                 <p>Ooups! la page que vous demandez n'existe pas!</p>

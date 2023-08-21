@@ -2,7 +2,6 @@
   position: relative;
   max-width: 100%;
   min-height: 180px;
-  background-image: url('banner.png');
   background-size: cover;
   background-position: center; /* Focus sur le bas de l'image */
   border-radius: 2rem;
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center; /* Aligner le texte en bas */
+  background-image: url('banner.png');
 }
 
 .banner h1 {
