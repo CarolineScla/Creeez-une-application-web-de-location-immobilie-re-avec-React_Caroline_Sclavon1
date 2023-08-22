@@ -1,16 +1,21 @@
-.appartement {
-  border-radius: 1rem;
+.logement {
+  border-radius: 20px;
   background-color: #ff6060;
   display: flex;
   position: relative; 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 
-    .appartement_text {
+    &.with-image {
+      background-color: transparent; /* Masquer le background-color lorsqu'il y a une image */
+  }
+
+    &_title {
       position: absolute;
       bottom: 0;
       left: 0;
-      font-size: 130%;
+      font-size: 100%;
       margin: 1rem;
+      max-width: 12rem;
+      color: white;
     }
 
     &::before {
@@ -18,22 +23,20 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
       pointer-events: none;
-      border-radius: 1rem;
+      border-radius: 20px;
     }
 
     .cover-image {
-      border-radius: 1rem;
-      min-width: 300px;
-      min-height: 200px;
-      max-width: 550px;
-      gap: 1rem;
+      border-radius: 20px;
+      min-height: 250px;
+      max-width: 350px;
     }
   }
 
 @media (max-width: 600px) {
-  .appartement {
+  .Logement {
     flex-basis: 100%;
     max-width: none;
   }

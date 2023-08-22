@@ -1,0 +1,59 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+    .slider__images {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .slider__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+  
+      &.active {
+        opacity: 1;
+      }
+    }
+  
+    .ArrowLeft,
+    .ArrowRight {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 1;
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+  
+    .ArrowLeft {
+      left: 0;
+    }
+  
+    .ArrowRight {
+      right: 0;
+    }
+  
+    .slider__sliderCount {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: white;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  }
+  

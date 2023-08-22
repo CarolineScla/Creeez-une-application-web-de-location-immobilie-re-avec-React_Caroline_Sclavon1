@@ -1,0 +1,9 @@
+.content {
+    color: white;
+    font-family: 'Montserrat';
+
+    @media (max-width: 600px) {
+    gap: 2rem;
+    display: grid;
+    }
+}

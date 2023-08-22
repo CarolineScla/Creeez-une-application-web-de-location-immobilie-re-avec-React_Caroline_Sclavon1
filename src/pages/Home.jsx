@@ -1,25 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import Navbar from '../components/Navbar.jsx';
-import Banner from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/banner.jsx'
-import AppartementGrid from "../components/LogementGrid.jsx";
+import Banner from '../components/banner.jsx'
+import LogementtGrid from "../components/LogementGrid.jsx";
 import Content from "../components/Content.jsx";
-import Appartement from "../components/Logement.jsx";
+import Logement from "../components/Logement.jsx";
 import Footer from "../components/Footer.jsx";
+import bannerHome from '../styles/bannerHome.jpg';
+import logementData from '../logementsliste.json';
 
-
-function App() {
+function Home() {
   return (
     <div className='container'>
       <Navbar />
       <Content>
-          <Banner />
-          <AppartementGrid> 
-          <Appartement />
-          </AppartementGrid>
+        <Banner backgroundImage={bannerHome} alt="Banner de la page d'accueil" />
+        <LogementtGrid> 
+          {logementData.map(logement => (
+            <Link to={`/FicheLogement/${logement.id}`} key={logement.id}>
+              <Logement data={logement} />
+            </Link>
+          ))}
+        </LogementtGrid>
       </Content>
       <Footer /> 
     </div>
   )
 }
 
-export default App;
+export default Home;

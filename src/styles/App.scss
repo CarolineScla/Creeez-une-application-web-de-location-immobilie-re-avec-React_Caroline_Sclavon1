@@ -1,0 +1,9 @@
+* {
+    font-family: 'Montserrat';
+
+}
+.page-wrapper {
+    min-height: calc(100vh - 50px); /* 50px est la hauteur du footer */
+    display: flex;
+    flex-direction: column;
+  }

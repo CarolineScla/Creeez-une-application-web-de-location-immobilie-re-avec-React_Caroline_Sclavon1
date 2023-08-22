@@ -1,0 +1,32 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &_content {
+        margin: 2rem 0 8rem 0;
+    }
+}
+
+.banner {
+height: 350px;
+}
+
+.banner::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    border-radius: 2rem;
+    background-color: rgba(0,0,0,0.3);
+   }
+
+   .about .footer:last-child {
+    bottom: 0;
+    width: 110%;
+    @media screen and (max-width:600px){
+    .footer_text {
+        max-width: 122px;
+  }
+}
+
+}

@@ -1,16 +1,13 @@
 .footer {
     background-color: black;
-    color: white;
-    text-align: center;
     min-height: 200px;
     margin: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
     font-size: 15px;
     margin-top: 20px;
-  
+
     &_logo img {
       max-width: 7rem;
     }
@@ -24,6 +21,7 @@
 
     &_text {
         margin: 2rem;
+        color: white;
     }
   }
   

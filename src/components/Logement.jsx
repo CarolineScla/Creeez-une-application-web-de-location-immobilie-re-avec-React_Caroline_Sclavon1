@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import "../styles/Logement.scss";
 
 function Logement({ data }) {
   return (
-    <div className='Logement'>
-      <img src={data.cover} alt={data.title} className='cover-image' />
-      <div className='Logement'>{data.title}</div>
-    </div>
+    <Link to={`/Logement/${data.id}`} className={`logement ${data.cover ? 'with-image' : ''}`}>
+      {data.cover && <img src={data.cover} alt={data.title} className='cover-image' />}
+      <div className='logement_title'>{data.title}</div>
+    </Link>
   );
 }
 
 export default Logement;
+

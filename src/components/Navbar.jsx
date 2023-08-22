@@ -10,10 +10,10 @@ function Navbar() {
   </div>
   <ul className='navbar_menu'>
     <li>
-      <Link exact="true" to='/Accueil'>Accueil</Link>
+      <Link exact="true" to='/'>Accueil</Link>
     </li>
     <li>
-      <Link to='/A-propos'>A propos</Link>
+      <Link to='/About'>A propos</Link>
     </li>
   </ul>
 </nav>

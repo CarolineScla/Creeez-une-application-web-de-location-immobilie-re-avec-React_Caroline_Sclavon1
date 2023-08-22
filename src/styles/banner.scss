@@ -3,18 +3,15 @@
   max-width: 100%;
   min-height: 180px;
   background-size: cover;
-  background-position: center; /* Focus sur le bas de l'image */
+  background-position: left; /* Focus sur le bas de l'image */
   border-radius: 2rem;
-  overflow: hidden; /* Masquer les parties débordantes de l'image */
   display: flex;
   justify-content: center;
   align-items: center; /* Aligner le texte en bas */
-  background-image: url('banner.png');
+  background-attachment: fixed;
 }
 
 .banner h1 {
-  font-family: 'Montserrat';
-  font-weight: normal;
   font-size: 3rem;
   z-index: 1; 
   white-space: nowrap;
@@ -34,25 +31,18 @@
 
  @media (max-width: 600px) {
   .banner {
-    position: relative;
-    display: flex;
-    align-items: flex-start; // Aligner verticalement le texte en bas
-    text-align: left; // Aligner le texte à gauche
-    flex-direction: column;
-    min-height: 75px;
-    padding: 1rem;
-    border-radius: 10px;
+    background-size: cover;
+    background-position: bottom;
+    max-height: 150px;
+    background-attachment: initial;
+
   }
 
-  .banner::before {
-    border-radius: 0;
-  }
-  
   .banner h1 {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .break-on-small-screens {
-    display: inline;
+    display: block;
   }
 }
