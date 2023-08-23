@@ -33,6 +33,10 @@
       min-height: 250px;
       max-width: 350px;
     }
+
+    &_contentInfos {
+      margin: auto;
+    }
   }
 
 @media (max-width: 600px) {
@@ -41,3 +45,38 @@
     max-width: none;
   }
 }
+
+.logement_ratings img{
+  margin-right: 5px;
+}
+
+.logement-tags {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  margin-right: 15px;
+  padding: 5px 20px;
+}
+
+.logement_section {
+  display: flex;
+  flex-direction: row; /* Aligner les éléments côte à côte */
+  justify-content: space-between; /* Espacement égal entre les éléments */
+  align-items: flex-start;
+  color: #ff6060;
+  
+  &_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_contentTags {
+  align-items: center;
+  color: white;
+  background-color: #ff6060;
+  padding: 25px 15px;
+  border-radius: 5px;
+}
+}
+

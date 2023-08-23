@@ -50,3 +50,20 @@ padding: 20px;
 transition: padding-top 0.3s ease-in-out;
 font-size: 20px;
 }
+
+.collapse_logement {
+        display: flex;
+        justify-content: center; /* Centrer les éléments horizontalement */
+        margin-top: 20px;
+      }
+
+    .collapse_logement_content {
+        margin-bottom: 10px;
+
+        .collapse {
+            padding: 0px;
+
+        }
+      }
+
+

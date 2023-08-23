@@ -1,0 +1,23 @@
+.host-container {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .host_title h3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 25px;  
+    font-weight: 500;
+
+}
+  
+  .host_photo {
+    border-radius: 50%;
+  }
+  
+  .infos_host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

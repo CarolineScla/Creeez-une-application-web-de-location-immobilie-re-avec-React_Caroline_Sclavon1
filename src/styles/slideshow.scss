@@ -1,59 +1,42 @@
-.slider {
+.slider{
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-  
-    .slider__images {
-      display: flex;
-      transition: transform 0.3s ease-in-out;
+    height: 450px;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    margin: 50px auto;
+    @media screen and (max-width: 650px){
+        height: 300px;  
+        margin: 60px auto;   
     }
-  
-    .slider__image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      opacity: 0.7;
-      transition: opacity 0.3s ease-in-out;
-  
-      &.active {
-        opacity: 1;
-      }
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        height: 15%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        @media screen and (max-width: 700px){
+            height: 10%;
+        }
+        &:active{
+            transform: translateY(-50%) scale(0.9);
+        }
+        &__arrow:hover {
+            cursor: pointer;
+        }
+        &--arrowLeft{
+            left: 25px;
+        }
+        &--arrowRight{
+            right: 25px;
+        }
     }
-  
-    .ArrowLeft,
-    .ArrowRight {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      z-index: 1;
-      opacity: 0.8;
-      transition: opacity 0.3s ease-in-out;
-  
-      &:hover {
-        opacity: 1;
-      }
-    }
-  
-    .ArrowLeft {
-      left: 0;
-    }
-  
-    .ArrowRight {
-      right: 0;
-    }
-  
-    .slider__sliderCount {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      color: white;
-      font-size: 14px;
-      opacity: 0.7;
-    }
-  }
-  
+
+        &__number {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            color: white;
+          }
+        
+}
