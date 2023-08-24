@@ -33,8 +33,17 @@
     min-height: 250px;
     max-width: 350px;
   }
+}
 
-  &_contentInfos {
-    margin: auto;
+@media (max-width: 600px) {
+  .logement_Tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+
+  .logement_Tags button {
+    margin-top: 5px;
+  }
+  
 }

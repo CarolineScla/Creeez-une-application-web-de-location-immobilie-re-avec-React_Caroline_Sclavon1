@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
+import '../logementPage.scss'
 import '../styles/slideshow.scss';
 import '../styles/Logement.scss'
 import Navbar from '../components/Navbar';
@@ -25,6 +26,7 @@ function LogementPage() {
   return (
     <>
   <div className='logementPage'>
+  <div className='main_conatiner'>
     <Navbar />
       <div className='main_logement'>
          <section className="slider_logement">
@@ -64,6 +66,8 @@ function LogementPage() {
             </div>
         </section>
     </div>
+    </div>
+
     <Footer />
   </div>
 

@@ -7,6 +7,7 @@ import '../styles/Error.scss'
 function Error() {
     return (
         <div className='error-page'>
+              <div className='main_conatiner'>
             <Navbar />
             <div className="error-section">
                 <span className="error-number">404</span>
@@ -14,6 +15,7 @@ function Error() {
                 <div className='error-link'>
                     <Link to="/">Retourner sur la page d'accueil</Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

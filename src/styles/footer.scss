@@ -6,8 +6,9 @@
     align-items: center;
     font-size: 15px;
     margin-top: 20px;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+    left: 0;
     height: 2.5rem;
 
     &_logo img {
@@ -26,10 +27,3 @@
         color: white;
     }
   }
-  
-  @media (max-width: 600px) {
-    .footer_text {
-        padding: 2rem 8em;
-        margin: 0;
-    }
-}

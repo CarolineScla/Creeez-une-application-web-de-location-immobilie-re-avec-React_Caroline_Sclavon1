@@ -44,8 +44,11 @@
 
   .infos_host {
     display: flex;
-    flex-direction: row-reverse;
+    max-width: 20%;
     align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
   }
   .logement {
     flex-basis: 100%;
