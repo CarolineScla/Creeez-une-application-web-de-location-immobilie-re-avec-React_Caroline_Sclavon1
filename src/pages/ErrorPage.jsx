@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Navbar from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/Navbar.jsx';
-import Footer from '/Users/macos/Desktop/PROJETS/Créez une application web de location immobilière avec React_Caroline_Sclavon1/kasa_app/src/components/Footer.jsx';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import '../styles/Error.scss'
 
 function Error() {

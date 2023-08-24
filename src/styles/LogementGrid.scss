@@ -8,14 +8,12 @@
     padding: 2rem;
     gap: 2rem;
     justify-content: center;
-    
 }
-
 @media (max-width: 600px) {
     .grid {
         justify-content: center; 
-        background-color: #ffff;
         margin: 0px;
         padding: 0px;
+        background-color: white;
     }
 }

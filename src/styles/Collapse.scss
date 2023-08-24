@@ -52,18 +52,20 @@ font-size: 20px;
 }
 
 .collapse_logement {
-        display: flex;
-        justify-content: center; /* Centrer les éléments horizontalement */
-        margin-top: 20px;
-      }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    @media (max-width: 600px) {
+        display: unset;
+    }
+  }
+  
+  .collapse_logement_content {
+    flex: 1; 
+    margin-right: 10px;
 
-    .collapse_logement_content {
-        margin-bottom: 10px;
-
-        .collapse {
-            padding: 0px;
-
-        }
-      }
-
-
+    .collapse {
+        max-width: 100%;
+        margin: 0;
+    }
+  }

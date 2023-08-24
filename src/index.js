@@ -1,17 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from "react-router-dom";
-import App from './pages/App.jsx';
-import reportWebVitals from './reportWebVitals.js';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './styles/App.scss'
+import Error from './pages/ErrorPage.jsx'
+import About from './pages/About.jsx'
+import Home from './pages/Home.jsx';
+import LogementPage from './pages/LogementPage.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-    
+    <React.StrictMode>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Logement/:id" element={<LogementPage />} /> 
+                <Route path="/Error" element={<Error />} />
+                <Route path="*" element={<Error />} />
+             </Routes>
+        </Router>
+    </React.StrictMode>
 );
-// Informations sur la vitesse de chargement, la réactivité et l'expérience utilisateur de l'application.
-// Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);

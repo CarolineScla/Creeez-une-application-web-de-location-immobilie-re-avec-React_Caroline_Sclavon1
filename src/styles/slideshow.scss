@@ -4,10 +4,9 @@
     border-radius: 20px;
     background-position: center;
     background-size: cover;
-    margin: 50px auto;
+    margin: 20px 0;
     @media screen and (max-width: 650px){
-        height: 300px;  
-        margin: 60px auto;   
+        height: 380px;  
     }
     &__arrow{
         position: absolute;
@@ -37,6 +36,9 @@
             bottom: 10px;
             left: 50%;
             color: white;
+            @media (max-width: 600px) {
+                display: none;
+            }
           }
         
 }

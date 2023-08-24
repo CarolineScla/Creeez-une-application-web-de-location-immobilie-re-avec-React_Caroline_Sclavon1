@@ -2,81 +2,39 @@
   border-radius: 20px;
   background-color: #ff6060;
   display: flex;
-  position: relative; 
+  position: relative;
 
-    &.with-image {
-      background-color: transparent; /* Masquer le background-color lorsqu'il y a une image */
+  &.with-image {
+    background-color: transparent; /* Masquer le background-color lorsqu'il y a une image */
   }
 
-    &_title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      font-size: 100%;
-      margin: 1rem;
-      max-width: 12rem;
-      color: white;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-      pointer-events: none;
-      border-radius: 20px;
-    }
-
-    .cover-image {
-      border-radius: 20px;
-      min-height: 250px;
-      max-width: 350px;
-    }
-
-    &_contentInfos {
-      margin: auto;
-    }
+  &_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 100%;
+    margin: 1rem;
+    max-width: 12rem;
+    color: white;
   }
 
-@media (max-width: 600px) {
-  .Logement {
-    flex-basis: 100%;
-    max-width: none;
-  }
-}
-
-.logement_ratings img{
-  margin-right: 5px;
-}
-
-.logement-tags {
-  background-color: #ff6060;
-  color: white;
-  border-radius: 50px;
-  border: none;
-  margin-right: 15px;
-  padding: 5px 20px;
-}
-
-.logement_section {
-  display: flex;
-  flex-direction: row; /* Aligner les éléments côte à côte */
-  justify-content: space-between; /* Espacement égal entre les éléments */
-  align-items: flex-start;
-  color: #ff6060;
-  
-  &_content {
-    display: flex;
-    flex-direction: column;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+    border-radius: 20px;
   }
 
-  &_contentTags {
-  align-items: center;
-  color: white;
-  background-color: #ff6060;
-  padding: 25px 15px;
-  border-radius: 5px;
-}
-}
+  .cover-image {
+    border-radius: 20px;
+    min-height: 250px;
+    max-width: 350px;
+  }
 
+  &_contentInfos {
+    margin: auto;
+  }
+}
