@@ -1,0 +1,19 @@
+* {
+    font-family: 'Montserrat';
+
+}
+
+.main_conatiner{
+  padding: 45px;
+}
+  
+@media (max-width: 600px) {
+  .main_conatiner{
+    display: unset;
+    padding: 20px;
+  }
+
+  .main_logement {
+    margin: 20px;
+  }
+}
