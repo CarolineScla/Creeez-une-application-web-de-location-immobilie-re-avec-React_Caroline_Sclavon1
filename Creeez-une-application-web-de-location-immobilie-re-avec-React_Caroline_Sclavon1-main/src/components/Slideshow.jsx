@@ -34,7 +34,7 @@ function Slideshow({imageSlider}) {
                   <img 
                       className="slider__arrow slider__arrow--arrowRight"  
                       src={ArrowRight} 
-                      alt="contenu suivant"  
+                      alt="Contenu suivant"  
                       onClick={nextSlide}
                   />
                   <p className="slider__number">{currentIndex + 1} / {imageSlider.length}</p>

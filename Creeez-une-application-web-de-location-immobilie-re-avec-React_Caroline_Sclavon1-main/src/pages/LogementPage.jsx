@@ -2,6 +2,7 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import '../styles/slideshow.scss';
 import '../styles/Logement.scss'
+import '../styles/logementPage.scss'
 import Navbar from '../components/Navbar';
 import Slideshow from '../components/Slideshow.jsx';
 import Collapse from '../components/Collapse';

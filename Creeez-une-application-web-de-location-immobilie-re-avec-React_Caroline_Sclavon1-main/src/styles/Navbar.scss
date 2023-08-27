@@ -5,34 +5,33 @@
   font-size: 20px;
   margin: 20px 0;
   gap: 2rem;
-
+  
+  .navbar_menu a.active {
+    text-decoration: underline;
+  }
   &_logo {
     margin-right: auto;
   }
   .navbar_menu {
     display: flex;
     align-items: center;
-    list-style: none;
     margin: 0;
     padding: 0;
     gap: 2rem;
 
-    li {
-      margin: 0;
-      padding: 0;
-      display: inline-block;
-      white-space: nowrap;
-      
-      a {
+       a {
         text-decoration: none;
         color: #ff6060;
 
         &:hover {
           text-decoration: underline;
         }
-      }
     }
   }
+}
+
+.activeLink {
+  text-decoration: underline; /* Ajoute un soulignement */
 }
 
 @media (max-width: 600px) {
@@ -41,13 +40,16 @@
     justify-content: center;
     flex-direction: row;
     font-size: 12px;
-    gap: 6%;
-    margin: 0 20px;
-  }
+
+    .navbar_menu {
+      gap: 10px;
+    } 
 
   .navbar_logo img {
-    max-width: 90%;
+    max-width: 70%;
   }
-
-  
+  .navbar_logo {
+    margin-right: -20px;
+  }
+}
 }

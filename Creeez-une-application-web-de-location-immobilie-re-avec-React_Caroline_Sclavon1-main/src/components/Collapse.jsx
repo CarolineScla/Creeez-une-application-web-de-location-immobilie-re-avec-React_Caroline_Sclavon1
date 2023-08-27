@@ -18,6 +18,7 @@ function Collapse({title, content}){
 
             <div className={isOpen ? "collapse__content--open" : "collapse__content--close"}>
                 {isOpen && (
+                    //Vérifie si content est un tableau. Si oui, il est mappé pour afficher chaque élément en tant que paragraphe. 
                     Array.isArray(content) ? content.map((item, index) => (
                             <p key={index}>{item}</p>
                     )): <p>{content}</p>
